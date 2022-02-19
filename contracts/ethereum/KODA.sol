@@ -13,11 +13,11 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 contract KODA is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     uint256 treePrice = 100000000000000000;
     enum LifeCycle {
-        Seedling=0;
-        Sprout=1;
-        Sapling=2;
-        Mature=3;
-        Death=4; 
+        Seedling,
+        Sprout,
+        Sapling,
+        Mature,
+        Death
 
     }
     struct Tree {
